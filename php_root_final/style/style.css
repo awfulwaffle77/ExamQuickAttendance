@@ -1,0 +1,19 @@
+p.add{
+	color:blue;
+	font-size:24;
+	font-weight:24;
+}
+p.sub{
+	color:red;
+}
+
+a.signin{
+	color:red;
+	float:right;
+	margin-right: 50%;
+}
+
+div.login{
+	float:right;
+
+}
