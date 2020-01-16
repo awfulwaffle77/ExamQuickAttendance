@@ -1,4 +1,3 @@
-import PyQt5
 import face_recognition
 from PIL import Image
 import cv2
