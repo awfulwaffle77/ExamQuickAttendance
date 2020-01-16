@@ -7,9 +7,9 @@
 #include <unistd.h>
 
 #define studenti_prezenti "studenti_prezenti.txt" // lista cu studentii recunoscuti de script.py (acetia au si cont)
-// CIOBANU ADINA LUIZA 
+// NUME PRENUME1 [PRENUME2] 
 #define lista_studenti "lista_studenti.txt" // lista cu toti studentii care trebuie sa dea examenul
-// CIOBANU ADINA LUIZA MATEMATICA F
+// NUME PRENUME1 [PRENUME2] [PROBA] [SALA]
 
 using namespace std;
 
