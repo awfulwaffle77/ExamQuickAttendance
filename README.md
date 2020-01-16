@@ -12,6 +12,7 @@ Set up in listaStud.sh the path from which you are reading the students that are
 
 ## How to run
 ```
+./listaStud.sh
 python face_recog.py
 ./scriptGreen
 ```
