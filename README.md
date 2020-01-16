@@ -13,6 +13,12 @@ Has an online(.php) platform where teachers can post schedules of their exam, a 
 
 **2.** [upload-manager.php](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/upload-manager.php) runs after you click on "Incarcati imaginea" and it saves the uploaded photo in the directory **uploads/** with the name given by the date and hour it is uploaded at.
 
+#### Teacher 
+*Note: The teacher already needs an account in the database, as creating an account is not available. Creating an account with a hashed password is done with [php_root/pages/signup.php](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/php_root_final/pages/signup.php)*
+**1.** Teacher logs in on page [php_root/loginPage.php](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/php_root_final/loginPage.php) and after verifying credentials he is redirected to [php_root/pages/logged.php](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/php_root_final/pages/logged.php).
+
+**2.** Teaches uploads a table of students as a photo with 5 columns (id, NUME, PRENUME, PROBA, SALA). This photo is now available to all student on a dashboard page [php_root/dashboard.php](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/php_root_final/dashboard.php)
+
 ## Initalize stuff
 -> Need the database with proffesors
 -> Gotta login and update some tables
