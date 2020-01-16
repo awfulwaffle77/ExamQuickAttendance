@@ -23,16 +23,15 @@ Has an online(.php) platform where teachers can post schedules of their exam, a 
 #### Verifier
 
 **1.** Verifier runs [listaStud.sh](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/listaStud.sh) which copies the photo of the table from the specified folder to the current one (**__the name of the directory from where you are reading the table must be changed in the script__**). The name of the file is "tabel".
-
-**2.** Tesseract is run on the table and output is redirected to a file named lista_studenti.txt.
+Tesseract is run on the table and output is redirected to a file named lista_studenti.txt.
 *Note: lista_studenti.txt contains the names of the students that should be present at the exam*
 
-**3.** [face_recog.py](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/face_recog.py) is run. This will check the directory given at the beginning of the script (named mainDir, which must be changed accordingly) for pictures of ID Cards of registered students. This script will create a file named *studenti_prezenti.txt* which updates when someone is recognized in front of the camera. Check the script for comments.
+**2.** [face_recog.py](https://github.com/awfulwaffle77/ExamQuickAttendance/blob/master/face_recog.py) is run. This will check the directory given at the beginning of the script (named mainDir, which must be changed accordingly) for pictures of ID Cards of registered students. This script will create a file named *studenti_prezenti.txt* which updates when someone is recognized in front of the camera. Check the script for comments.
 *mainDir is the path of the directory that contains the pictures of known students.*
 
 *Note: studenti_prezenti.txt is a file that contains the name of the students that came in front of the camera and, compared with existing photos from their IDs, if matching, their names are written here.*
 
-**4.** [scriptGreen](https://github.com/awfulwaffle77/ExamQuickAttendance/edit/master/scriptGreen.cpp) is run. After reading *lista_studenti.txt* and storing its data in a struct named Student, it will first print the names of all the students that need to be present at the exam. Then it will then check the file *studenti_prezenti.txt* for names that are the same. If a name equality is found, then it will print over the existing content, the name that is found, in a distinct color. The checking is done once a second ```sleep(1)``` due to conflicts with the file(student_prezenti.txt) accessed by both this script and face_recog.py.
+**3.** [scriptGreen](https://github.com/awfulwaffle77/ExamQuickAttendance/edit/master/scriptGreen.cpp) is run. After reading *lista_studenti.txt* and storing its data in a struct named Student, it will first print the names of all the students that need to be present at the exam. Then it will then check the file *studenti_prezenti.txt* for names that are the same. If a name equality is found, then it will print over the existing content, the name that is found, in a distinct color. The checking is done once a second ```sleep(1)``` due to conflicts with the file(student_prezenti.txt) accessed by both this script and face_recog.py.
 
 ## Initalize stuff
 -> Need the database with proffesors
