@@ -2,6 +2,8 @@
 Has an online(.php) platform where teachers can post schedules of their exam, a face recognition script for attendance and a script to show who has to attend and who is present.
 *This is nothing more than a school project*
 
+Credits to: [face_recognition](https://github.com/ageitgey/face_recognition), [tesseract](https://github.com/tesseract-ocr/tesseract)
+
 ## How should this work?
 ### Step by step tutorial (what happens how)
 #### Student
